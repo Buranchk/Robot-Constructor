@@ -33,4 +33,16 @@ public class RobotBuild
         }
     }
 
+    public RobotPart GetPart(PartType type)
+    {
+        foreach (RobotPart part in Parts)
+        {
+            if (part.Type == type)
+            {
+                return part;
+            }
+        }
+
+        return null;
+    }
 }

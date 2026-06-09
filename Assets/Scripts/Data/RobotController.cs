@@ -10,24 +10,38 @@ public class RobotController : MonoBehaviour
 
     private void Awake()
     {
-        builder = new RobotBuilder();
+        builder = new RobotBuilder(transform);
         builder.LoadAndSortPrefabs();
-
-        RebuildRobot();
+        robot = builder.BuildDefault();
         robotPartMaterials = Resources.LoadAll<RobotPartMaterial>("RobotMaterials");
     }
 
     public void PlayAnimation()
     {
+        StopAnimations();
+        int animationIndex = Random.Range(0, 3);
+
         foreach (RobotPartMotion motion in robot.Motions)
         {
-            motion.MoveAnimation();
+            switch (animationIndex)
+            {
+                case 0:
+                    motion.MoveAnimation();
+                    break;
+                case 1:
+                    motion.JumpAnimation();
+                    break;
+                case 2:
+                    motion.RotateAnimation();
+                    break;
+            }
         }
     }
 
     public void SwitchPart(PartType type, bool next)
     {
-        robot = builder.SwitchPart(type, robot, next, transform);
+        StopAnimations();
+        robot = builder.SwitchPart(type, robot, next);
     }
 
     
@@ -58,47 +72,11 @@ public class RobotController : MonoBehaviour
         ChangeMaterial(selectedType, robotPartMaterials[materialIndex]);
     }
 
-    private void RebuildRobot()
+    private void StopAnimations()
     {
-        DestroyCurrentRobot();
-
-
-        robot = builder.Build(robot.Legs.gameObject, robot.Torso.gameObject, robot.Head.gameObject, transform);
-    }
-
-    private void DestroyCurrentRobot()
-    {
-        if (robot == null)
+        foreach (RobotPartMotion motion in robot.Motions)
         {
-            return;
+            motion.StopAnimations();
         }
-
-        foreach (RobotPart part in robot.Parts)
-        {
-            if (part != null && part.transform.parent == transform)
-            {
-                Destroy(part.gameObject);
-            }
-        }
-
-        robot = null;
-    }
-
-    private RobotPart GetPart(PartType type)
-    {
-        if (robot == null)
-        {
-            return null;
-        }
-
-        foreach (RobotPart part in robot.Parts)
-        {
-            if (part.Type == type)
-            {
-                return part;
-            }
-        }
-
-        return null;
     }
 }

@@ -80,7 +80,7 @@ public class StickTorsoMotion : RobotPartMotion
         }
 
         currentSequence = DOTween.Sequence().Join(AnchorPoint
-            .DOLocalRotate(new Vector3(0f, 180f, 0f), anticipationDuration + followThroughDuration, RotateMode.LocalAxisAdd)
+            .DOLocalRotate(new Vector3(0f, 360f, 0f), anticipationDuration + followThroughDuration, RotateMode.LocalAxisAdd)
             .SetEase(rotateEase));
     }
 
