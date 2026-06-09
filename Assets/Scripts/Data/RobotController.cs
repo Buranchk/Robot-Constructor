@@ -25,26 +25,11 @@ public class RobotController : MonoBehaviour
         }
     }
 
-    public void SwitchPart(PartType partType, bool direction)
+    public void SwitchPart(PartType type, bool next)
     {
-        RobotPart currentPart = GetPart(partType);
-        GameObject nextPrefab = builder.GetNextPrefab(currentPart.Type, currentPart.PartId, direction);
-
-        switch (partType)
-        {
-            case PartType.Legs:
-                robot.Legs.gameObject = nextPrefab;
-                break;
-            case PartType.Body:
-                selectedTorsoPrefab = nextPrefab;
-                break;
-            case PartType.Head:
-                selectedHeadPrefab = nextPrefab;
-                break;
-        }
-
-        RebuildRobot();
+        robot = builder.SwitchPart(type, robot, next, transform);
     }
+
     
     public void ChangeMaterial(PartType selectedType, RobotPartMaterial selectedMaterial)
     {
