@@ -9,13 +9,16 @@ public class RobotPart : MonoBehaviour
     [SerializeField] private float weight;
     [SerializeField] private int power;
     [SerializeField] private PartType type;
+    [SerializeField] private string partId;
     [SerializeField] private float height;
     [SerializeField] private List<Renderer> partRenderers;
 
     public float Weight => weight;
     public int Power => power;
     public PartType Type => type;
+    public string PartId => partId;
     public float Height => height;
+    public RobotPartMaterial CurrentMaterial { get; private set; }
 
     public void SetMaterial(RobotPartMaterial partMaterial)
     {
@@ -33,11 +36,8 @@ public class RobotPart : MonoBehaviour
 
             materialRenderer.material = partMaterial.Material;
         }
-    }
 
-    private void Awake()
-    {
-        SetMaterial(GetMaterial("Default"));
+        CurrentMaterial = partMaterial;
     }
 
     private static IReadOnlyList<RobotPartMaterial> GetMaterials()

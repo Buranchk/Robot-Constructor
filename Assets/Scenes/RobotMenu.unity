@@ -202,9 +202,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 323281362}
-        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-        m_MethodName: SwitchPart
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: NextPart
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -741,7 +741,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 213602988}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: PreviousPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
 --- !u!114 &213602988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2678,8 +2689,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 323281362}
-        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
         m_MethodName: PlayAnimation
         m_Mode: 1
         m_Arguments:
@@ -3994,6 +4005,7 @@ GameObject:
   - component: {fileID: 851639439}
   - component: {fileID: 851639438}
   - component: {fileID: 851639437}
+  - component: {fileID: 851639435}
   m_Layer: 5
   m_Name: Canvas_Contorls
   m_TagString: Untagged
@@ -4018,6 +4030,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &851639435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851639436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463c85751acf4f3081bb01a143e506fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotCustomizationUI
+  robotController: {fileID: 323281362}
 --- !u!114 &851639438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5668,7 +5693,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1181482459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: PreviousPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
 --- !u!114 &1181482459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6614,7 +6650,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1642354895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: PreviousPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
 --- !u!114 &1642354895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7802,9 +7849,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 323281362}
-        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-        m_MethodName: SwitchPart
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: NextPart
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8055,9 +8102,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 323281362}
-        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-        m_MethodName: SwitchPart
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: NextPart
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

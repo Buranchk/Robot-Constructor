@@ -1,56 +1,52 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RobotController : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> legsPrefabs;
-    [SerializeField] private List<GameObject> torsoPrefabs;
-    [SerializeField] private List<GameObject> headPrefabs;
-    
+    private RobotBuilder builder;
     private RobotBuild robot;
     private RobotPartMaterial[] robotPartMaterials;
-    private int legsIndex;
-    private int torsoIndex;
-    private int headIndex;
+    
+    public RobotBuild Robot => robot;
 
     private void Awake()
     {
+        builder = new RobotBuilder();
+        builder.LoadAndSortPrefabs();
+
         RebuildRobot();
         robotPartMaterials = Resources.LoadAll<RobotPartMaterial>("RobotMaterials");
     }
 
     public void PlayAnimation()
     {
-        if (robot == null)
-        {
-            return;
-        }
-
         foreach (RobotPartMotion motion in robot.Motions)
         {
             motion.MoveAnimation();
         }
     }
 
-    public void SwitchPart(int type)
+    public void SwitchPart(PartType partType, bool direction)
     {
-        switch (type)
+        RobotPart currentPart = GetPart(partType);
+        GameObject nextPrefab = builder.GetNextPrefab(currentPart.Type, currentPart.PartId, direction);
+
+        switch (partType)
         {
-            case 1:
-                legsIndex = GetNextIndex(legsIndex, legsPrefabs);
+            case PartType.Legs:
+                robot.Legs.gameObject = nextPrefab;
                 break;
-            case 2:
-                torsoIndex = GetNextIndex(torsoIndex, torsoPrefabs);
+            case PartType.Body:
+                selectedTorsoPrefab = nextPrefab;
                 break;
-            case 3:
-                headIndex = GetNextIndex(headIndex, headPrefabs);
+            case PartType.Head:
+                selectedHeadPrefab = nextPrefab;
                 break;
         }
 
         RebuildRobot();
     }
     
-    private void ChangeMaterial(PartType selectedType, RobotPartMaterial selectedMaterial)
+    public void ChangeMaterial(PartType selectedType, RobotPartMaterial selectedMaterial)
     {
         if (robot == null || selectedMaterial == null)
         {
@@ -67,7 +63,7 @@ public class RobotController : MonoBehaviour
 
     }
 
-    private void ChangeMaterial(PartType selectedType, int materialIndex)
+    public void ChangeMaterial(PartType selectedType, int materialIndex)
     {
         if (robotPartMaterials == null || materialIndex < 0 || materialIndex >= robotPartMaterials.Length)
         {
@@ -81,13 +77,8 @@ public class RobotController : MonoBehaviour
     {
         DestroyCurrentRobot();
 
-        if (!HasPrefab(legsPrefabs, legsIndex) || !HasPrefab(torsoPrefabs, torsoIndex) || !HasPrefab(headPrefabs, headIndex))
-        {
-            return;
-        }
 
-        RobotBuilder builder = new RobotBuilder();
-        robot = builder.Build(legsPrefabs[legsIndex], torsoPrefabs[torsoIndex], headPrefabs[headIndex], transform);
+        robot = builder.Build(robot.Legs.gameObject, robot.Torso.gameObject, robot.Head.gameObject, transform);
     }
 
     private void DestroyCurrentRobot()
@@ -108,18 +99,21 @@ public class RobotController : MonoBehaviour
         robot = null;
     }
 
-    private int GetNextIndex(int currentIndex, List<GameObject> prefabs)
+    private RobotPart GetPart(PartType type)
     {
-        if (prefabs == null || prefabs.Count == 0)
+        if (robot == null)
         {
-            return 0;
+            return null;
         }
 
-        return (currentIndex + 1) % prefabs.Count;
-    }
+        foreach (RobotPart part in robot.Parts)
+        {
+            if (part.Type == type)
+            {
+                return part;
+            }
+        }
 
-    private bool HasPrefab(List<GameObject> prefabs, int index)
-    {
-        return prefabs != null && index >= 0 && index < prefabs.Count && prefabs[index] != null;
+        return null;
     }
 }

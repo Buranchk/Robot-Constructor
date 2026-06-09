@@ -162,6 +162,7 @@ MonoBehaviour:
   weight: 5
   power: 5
   type: 0
+  partId: Stick
   height: 0.75
   partRenderers:
   - {fileID: 5533289148894946603}

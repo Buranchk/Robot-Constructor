@@ -49,6 +49,7 @@ MonoBehaviour:
   weight: 5
   power: 8
   type: 2
+  partId: Cube
   height: 0.4
   partRenderers:
   - {fileID: 7912271615003343759}
