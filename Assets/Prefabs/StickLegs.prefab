@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RobotPart
   weight: 5
   power: 5
-  type: 0
+  type: 1
   partId: Stick
   height: 0.75
   partRenderers:

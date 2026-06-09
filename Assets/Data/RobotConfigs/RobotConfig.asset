@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c211182ea71224cf9aba3a0370479b67, type: 3}
+  m_Name: RobotConfig
+  m_EditorClassIdentifier: Assembly-CSharp::RobotConfig
+  parts:
+  - {fileID: 3115696611223087624, guid: ebda3e98612f341f4970c0f2e9ec3885, type: 3}
+  - {fileID: 7260181448089521814, guid: 59263d12610a44a9fa885776d1a44cb9, type: 3}
+  - {fileID: 4165058621165843624, guid: c875bddf622f34df39bf48165c517791, type: 3}
+  - {fileID: 7495396445327333471, guid: b5841db469de241b0ac681633920f85a, type: 3}
+  - {fileID: 8865128666409261366, guid: 478f318578d254c7bb0db364d53aafdc, type: 3}
+  - {fileID: 7409005307513151971, guid: 9957aedd52c3742ea88ad96e640ab9fd, type: 3}

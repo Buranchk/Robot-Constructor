@@ -119,6 +119,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3208299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3208300}
+  - component: {fileID: 3208302}
+  - component: {fileID: 3208301}
+  m_Layer: 5
+  m_Name: Color_Selected
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &3208300
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208299}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0021608, y: 1.0021608, z: 1.0021608}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 687482467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -100.899956, y: -50.00001}
+  m_SizeDelta: {x: 48, y: 46}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3208301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &3208302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3208299}
+  m_CullTransparentMesh: 1
 --- !u!1 &56105024
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +359,7 @@ RectTransform:
   m_Children:
   - {fileID: 213602986}
   - {fileID: 1929057226}
+  - {fileID: 120063970}
   - {fileID: 219720230}
   - {fileID: 1948797941}
   - {fileID: 935942138}
@@ -408,6 +484,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72955049}
   m_CullTransparentMesh: 1
+--- !u!1 &120063969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120063970}
+  - component: {fileID: 120063972}
+  - component: {fileID: 120063971}
+  m_Layer: 5
+  m_Name: Color_Selected
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &120063970
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120063969}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0021608, y: 1.0021608, z: 1.0021608}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 68782605}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -100.899956, y: -50.00001}
+  m_SizeDelta: {x: 48, y: 46}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &120063971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120063969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &120063972
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120063969}
+  m_CullTransparentMesh: 1
 --- !u!1 &182034723
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,12 +666,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182034723}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 4, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1024357285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191766147
 GameObject:
@@ -753,6 +904,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213602988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +1092,7 @@ GameObject:
   - component: {fileID: 219720233}
   - component: {fileID: 219720232}
   - component: {fileID: 219720231}
+  - component: {fileID: 2000000001}
   m_Layer: 5
   m_Name: Color_Default
   m_TagString: Untagged
@@ -1009,7 +1162,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219720232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeBodyMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000001}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &219720232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,12 +1464,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323281360}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1024357285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &323281362
 MonoBehaviour:
@@ -1306,15 +1483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87981c659a399424da9c39c7808ed12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RobotController
-  legsPrefabs:
-  - {fileID: 1167245403334566219, guid: c875bddf622f34df39bf48165c517791, type: 3}
-  - {fileID: 311628376435626474, guid: 9957aedd52c3742ea88ad96e640ab9fd, type: 3}
-  torsoPrefabs:
-  - {fileID: 8549888940405028523, guid: b5841db469de241b0ac681633920f85a, type: 3}
-  - {fileID: 780912685210668207, guid: 478f318578d254c7bb0db364d53aafdc, type: 3}
-  headPrefabs:
-  - {fileID: 2048806229046257736, guid: ebda3e98612f341f4970c0f2e9ec3885, type: 3}
-  - {fileID: 6426287857054108773, guid: 59263d12610a44a9fa885776d1a44cb9, type: 3}
+  robotConfig: {fileID: 11400000, guid: a8b2417ff7f6747a3a638fd5e79ebb28, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1496,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1452,6 +1622,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5c6e343a694438829d6321989421c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArcballCameraController
+  robotController: {fileID: 323281362}
 --- !u!1 &330911243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1774,7 @@ GameObject:
   - component: {fileID: 346902115}
   - component: {fileID: 346902114}
   - component: {fileID: 346902113}
+  - component: {fileID: 2100000001}
   m_Layer: 5
   m_Name: Canvas_DynamicText
   m_TagString: Untagged
@@ -1649,7 +1833,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 330585545}
-  m_PlaneDistance: 3
+  m_PlaneDistance: 0.4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1677,7 +1861,7 @@ RectTransform:
   - {fileID: 1512697495}
   - {fileID: 544044650}
   - {fileID: 1642521747}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1472028097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1696,6 +1880,7 @@ GameObject:
   - component: {fileID: 374837095}
   - component: {fileID: 374837094}
   - component: {fileID: 374837093}
+  - component: {fileID: 2000000002}
   m_Layer: 5
   m_Name: Color_Red
   m_TagString: Untagged
@@ -1765,7 +1950,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 374837094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeLegsMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000002}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &374837094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2422,6 +2631,7 @@ GameObject:
   - component: {fileID: 537477921}
   - component: {fileID: 537477920}
   - component: {fileID: 537477919}
+  - component: {fileID: 2000000003}
   m_Layer: 5
   m_Name: Color_Default
   m_TagString: Untagged
@@ -2491,7 +2701,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 537477920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeHeadMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000003}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &537477920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,6 +2763,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537477917}
+  m_CullTransparentMesh: 1
+--- !u!1 &543738188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543738189}
+  - component: {fileID: 543738191}
+  - component: {fileID: 543738190}
+  m_Layer: 5
+  m_Name: Color_Selected
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &543738189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543738188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1593671246}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -100.9, y: -50.00001}
+  m_SizeDelta: {x: 48, y: 46}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &543738190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543738188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &543738191
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543738188}
   m_CullTransparentMesh: 1
 --- !u!1 &544044649
 GameObject:
@@ -3073,6 +3382,7 @@ RectTransform:
   m_Children:
   - {fileID: 1642354893}
   - {fileID: 1968583331}
+  - {fileID: 3208300}
   - {fileID: 1300135557}
   - {fileID: 374837092}
   - {fileID: 1717946539}
@@ -3610,6 +3920,7 @@ GameObject:
   - component: {fileID: 777430049}
   - component: {fileID: 777430048}
   - component: {fileID: 777430047}
+  - component: {fileID: 2000000004}
   m_Layer: 5
   m_Name: Color_Blue
   m_TagString: Untagged
@@ -3679,7 +3990,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 777430048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeHeadMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000004}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &777430048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3987,12 +4322,25 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: 0.239
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &851639435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851639436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463c85751acf4f3081bb01a143e506fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotCustomizationUI
+  robotController: {fileID: 323281362}
 --- !u!1 &851639436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,7 +4355,7 @@ GameObject:
   - component: {fileID: 851639437}
   - component: {fileID: 851639435}
   m_Layer: 5
-  m_Name: Canvas_Contorls
+  m_Name: Canvas_Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4030,19 +4378,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &851639435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851639436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 463c85751acf4f3081bb01a143e506fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RobotCustomizationUI
-  robotController: {fileID: 323281362}
 --- !u!114 &851639438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4077,7 +4412,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 330585545}
-  m_PlaneDistance: 3
+  m_PlaneDistance: 0.4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4105,7 +4440,7 @@ RectTransform:
   - {fileID: 68782605}
   - {fileID: 687482467}
   - {fileID: 553611709}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1472028097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4394,7 +4729,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 330585545}
-  m_PlaneDistance: 3
+  m_PlaneDistance: 0.4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4422,7 +4757,7 @@ RectTransform:
   - {fileID: 233422359}
   - {fileID: 2047168915}
   - {fileID: 425316856}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1472028097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4578,6 +4913,7 @@ GameObject:
   - component: {fileID: 935942141}
   - component: {fileID: 935942140}
   - component: {fileID: 935942139}
+  - component: {fileID: 2000000005}
   m_Layer: 5
   m_Name: Color_Green
   m_TagString: Untagged
@@ -4647,7 +4983,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 935942140}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeBodyMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000005}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &935942140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5097,6 +5457,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996441421}
   m_CullTransparentMesh: 1
+--- !u!1 &1024357284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024357285}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024357285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024357284}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 323281361}
+  - {fileID: 182034727}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035898151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,6 +5639,7 @@ GameObject:
   - component: {fileID: 1047584395}
   - component: {fileID: 1047584394}
   - component: {fileID: 1047584393}
+  - component: {fileID: 2000000006}
   m_Layer: 5
   m_Name: Color_Green
   m_TagString: Untagged
@@ -5315,7 +5709,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1047584394}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeHeadMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000006}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1047584394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5366,6 +5784,7 @@ GameObject:
   - component: {fileID: 1130785498}
   - component: {fileID: 1130785497}
   - component: {fileID: 1130785496}
+  - component: {fileID: 2000000007}
   m_Layer: 5
   m_Name: Color_Blue
   m_TagString: Untagged
@@ -5435,7 +5854,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1130785497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeLegsMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000007}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1130785497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5705,6 +6148,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1181482459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5826,9 +6270,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: 0.59
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5844,6 +6288,7 @@ GameObject:
   - component: {fileID: 1300135560}
   - component: {fileID: 1300135559}
   - component: {fileID: 1300135558}
+  - component: {fileID: 2000000008}
   m_Layer: 5
   m_Name: Color_Default
   m_TagString: Untagged
@@ -5913,7 +6358,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1300135559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeLegsMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000008}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1300135559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6028,6 +6497,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414985088}
   m_CullTransparentMesh: 1
+--- !u!1 &1472028096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472028097}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472028097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472028096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.15, z: -3.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 924817444}
+  - {fileID: 851639440}
+  - {fileID: 346902116}
+  - {fileID: 1686785022}
+  - {fileID: 1520597401}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1512697494
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,12 +6681,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520597398}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.15, z: 3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1472028097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565880325
 GameObject:
@@ -6292,6 +6797,7 @@ RectTransform:
   m_Children:
   - {fileID: 1181482457}
   - {fileID: 56105025}
+  - {fileID: 543738189}
   - {fileID: 537477918}
   - {fileID: 1745415675}
   - {fileID: 1047584392}
@@ -6662,6 +7168,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1642354895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6788,7 +7295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670487570}
   m_Layer: 0
-  m_Name: Light
+  m_Name: Lighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6884,7 +7391,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 330585545}
-  m_PlaneDistance: 3
+  m_PlaneDistance: 0.4
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -6909,7 +7416,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1882899952}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1472028097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6928,6 +7435,7 @@ GameObject:
   - component: {fileID: 1717946542}
   - component: {fileID: 1717946541}
   - component: {fileID: 1717946540}
+  - component: {fileID: 2000000009}
   m_Layer: 5
   m_Name: Color_Green
   m_TagString: Untagged
@@ -6997,7 +7505,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1717946541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeLegsMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000009}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1717946541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7187,6 +7719,7 @@ GameObject:
   - component: {fileID: 1745415678}
   - component: {fileID: 1745415677}
   - component: {fileID: 1745415676}
+  - component: {fileID: 2000000010}
   m_Layer: 5
   m_Name: Color_Red
   m_TagString: Untagged
@@ -7256,7 +7789,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1745415677}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeHeadMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000010}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1745415677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7307,6 +7864,7 @@ GameObject:
   - component: {fileID: 1820181249}
   - component: {fileID: 1820181248}
   - component: {fileID: 1820181247}
+  - component: {fileID: 2000000011}
   m_Layer: 5
   m_Name: Color_Blue
   m_TagString: Untagged
@@ -7376,7 +7934,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1820181248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeBodyMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000011}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1820181248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7911,6 +8493,7 @@ GameObject:
   - component: {fileID: 1948797944}
   - component: {fileID: 1948797943}
   - component: {fileID: 1948797942}
+  - component: {fileID: 2000000012}
   m_Layer: 5
   m_Name: Color_Red
   m_TagString: Untagged
@@ -7980,7 +8563,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1948797943}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851639435}
+        m_TargetAssemblyTypeName: RobotCustomizationUI, Assembly-CSharp
+        m_MethodName: ChangeBodyMaterial
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000000012}
+        m_TargetAssemblyTypeName: SelectedColorMarker, Assembly-CSharp
+        m_MethodName: MoveToButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1948797943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8152,6 +8759,162 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968583330}
   m_CullTransparentMesh: 1
+--- !u!114 &2000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219720229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 120063969}
+--- !u!114 &2000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374837091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 3208299}
+--- !u!114 &2000000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537477917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 543738188}
+--- !u!114 &2000000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777430045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 543738188}
+--- !u!114 &2000000005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935942137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 120063969}
+--- !u!114 &2000000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047584391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 543738188}
+--- !u!114 &2000000007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130785494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 3208299}
+--- !u!114 &2000000008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300135556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 3208299}
+--- !u!114 &2000000009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717946538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 3208299}
+--- !u!114 &2000000010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745415674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 543738188}
+--- !u!114 &2000000011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820181245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 120063969}
+--- !u!114 &2000000012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948797940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5fc7d23d68464c8ac05ae9b80de428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 120063969}
 --- !u!1 &2011189334
 GameObject:
   m_ObjectHideFlags: 0
@@ -8493,6 +9256,27 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &2100000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346902112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff2299c2e444e529b45f038387087dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotController: {fileID: 323281362}
+  legsName: {fileID: 927878194}
+  torsoName: {fileID: 213735913}
+  headName: {fileID: 532874801}
+  heightValue: {fileID: 833419846}
+  weightValue: {fileID: 964024362}
+  energyValue: {fileID: 524711766}
+  weightSlider: {fileID: 842693189}
+  energySlider: {fileID: 1282966846}
 --- !u!1 &2131506315
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,13 +9418,8 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1024357285}
   - {fileID: 330585546}
-  - {fileID: 832575519}
   - {fileID: 1670487570}
-  - {fileID: 323281361}
-  - {fileID: 182034727}
-  - {fileID: 924817444}
-  - {fileID: 851639440}
-  - {fileID: 346902116}
-  - {fileID: 1686785022}
-  - {fileID: 1520597401}
+  - {fileID: 1472028097}
+  - {fileID: 832575519}

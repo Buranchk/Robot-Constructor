@@ -16,9 +16,24 @@ public class RobotCustomizationUI : MonoBehaviour
         robotController.SwitchPart(ToPartType(partType), false);
     }
 
-    public void ChangeMaterial(int partType, int materialIndex)
+    public void ChangeLegsMaterial(int materialIndex)
     {
-        robotController.ChangeMaterial(ToPartType(partType), materialIndex);
+        ChangeMaterial(PartType.Legs, materialIndex);
+    }
+
+    public void ChangeBodyMaterial(int materialIndex)
+    {
+        ChangeMaterial(PartType.Torso, materialIndex);
+    }
+
+    public void ChangeHeadMaterial(int materialIndex)
+    {
+        ChangeMaterial(PartType.Head, materialIndex);
+    }
+
+    private void ChangeMaterial(PartType partType, int materialIndex)
+    {
+        robotController.ChangeMaterial(partType, materialIndex);
     }
 
     public void PlayAnimation()
@@ -28,6 +43,7 @@ public class RobotCustomizationUI : MonoBehaviour
 
     private PartType ToPartType(int partType)
     {
-        return (PartType)(partType - 1);
+        return (PartType)partType;
     }
+
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 public class RobotBuild
 {
@@ -35,14 +36,6 @@ public class RobotBuild
 
     public RobotPart GetPart(PartType type)
     {
-        foreach (RobotPart part in Parts)
-        {
-            if (part.Type == type)
-            {
-                return part;
-            }
-        }
-
-        return null;
+        return Parts.FirstOrDefault(part => part.Type == type);
     }
 }

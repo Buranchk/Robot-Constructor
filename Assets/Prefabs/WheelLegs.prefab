@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RobotPart
   weight: 10
   power: 12
-  type: 0
+  type: 1
   partId: Wheel
   height: 0.6
   partRenderers:
